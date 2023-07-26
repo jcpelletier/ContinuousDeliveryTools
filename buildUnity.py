@@ -4,7 +4,7 @@ import argparse
 
 def produce_build(unity_path, job_name, workspace, build_number):
     os.chdir(workspace)
-    build_location = os.path.join(workspace, f"Build/FantasyAdventure_Android_{build_number}.apk")
+    build_location = os.path.join(workspace, f"Build/Android_{build_number}.apk")
     unity_exe = os.path.join(unity_path, "Editor/Unity.exe")
     
     cmd = [
