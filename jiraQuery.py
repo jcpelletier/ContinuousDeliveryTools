@@ -15,7 +15,7 @@ headers = {
 }
 
 response = requests.get(
-    f'https://{domain}.atlassian.net/rest/api/3/search?jql={jql}&expand=renderedFields,changelog',
+    f'https://{domain}.atlassian.net/rest/api/3/search?jql={jql}&expand=renderedFields',
     headers=headers
 )
 
