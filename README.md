@@ -23,18 +23,18 @@ Tools for build and delivery
   ```bash
   python unity_build.py "C:\Program Files\Unity\Hub\Editor\2021.3.24f1" "YourJobName" "YourWorkspacePath" "YourBuildNumber"
 
-# BuildProject Class
+## Build.cs
 
 This is a simple C# script that automates the process of building your Unity project from the command line. It also includes functionality to disable the Oculus XR plugin before building, if it's enabled. This script can be helpful for automating your build process and integrating it into your development pipeline.
 
-## How to Use
+### How to Use
 
-1. Copy the `BuildProject.cs` file into your Unity project's `Assets` folder.
+1. Copy the `Build.cs` file into your Unity project's `Assets` folder.
 2. Make sure you have the necessary Unity Editor and target platform set up for your project.
 3. Open your preferred command line interface.
 4. Navigate to the root folder of your Unity project.
 
-## Command Line Arguments
+### Command Line Arguments
 
 To use this script, you can pass the following command line arguments:
 
