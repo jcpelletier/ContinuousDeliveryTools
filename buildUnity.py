@@ -15,7 +15,7 @@ def produce_build(unity_path, job_name, workspace, build_number):
         "-logfile",
         "build.log",
         "-executeMethod",
-        "BuildProject.PerformBuild",
+        "Build.PerformBuild",
         "-projectPath",
         workspace,
         "-buildTarget",
