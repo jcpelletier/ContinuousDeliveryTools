@@ -1,5 +1,5 @@
 # Continuous Delivery Tools
-Tools for build and delivery
+Tools for build and delivery of Unity projects
 
 ## jiraQuery.py
 - Pass Jira credentials and JQL query, and this will return a JSON dump of issues.
