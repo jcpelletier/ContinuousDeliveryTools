@@ -1,6 +1,9 @@
 # Continuous Delivery Tools
 Tools for build and delivery
 
+# CI/CD Scripts
+These scripts are intended to be used in a CI/CD environment such as Jenkins. They are written in Python for high portability.
+
 ## jiraQuery.py
 - Pass Jira credentials and JQL query, and this will return a JSON dump of issues.
 - Example:
@@ -23,9 +26,12 @@ Tools for build and delivery
   ```bash
   python unity_build.py "path/to/your/unity/editor.exe" "YourJobName" "YourWorkspacePath" "YourBuildNumber"
 
+# Unity Scripts
+These scripts are intended to assist with the build and instrumentation of Unity projects in a CI/CD environment.
+
 ## Build.cs
 
-This is a simple C# script that automates the process of building your Unity project from the command line. Note that it will disable the Oculus XR plugin before building, if it's enabled. This script can be helpful for automating your build process and integrating it into your development pipeline.
+This is a simple C# script that automates the process of building your Unity project from the command line. Note that it will disable the Oculus XR plugin before building, if it's enabled. This script can be called using buildUnity.py in your CI/CD environment to automate the process of producing builds.
 
 ### How to Use
 
