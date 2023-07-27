@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-public class BuildProject
+public class Build
 {
     public static void PerformBuild()
     {
