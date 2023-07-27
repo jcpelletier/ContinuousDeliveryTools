@@ -21,7 +21,7 @@ Tools for build and delivery
 - Example:
 
   ```bash
-  python unity_build.py "C:\Program Files\Unity\Hub\Editor\2021.3.24f1" "YourJobName" "YourWorkspacePath" "YourBuildNumber"
+  python unity_build.py "path/to/your/unity/editor.exe" "YourJobName" "YourWorkspacePath" "YourBuildNumber"
 
 ## Build.cs
 
@@ -43,7 +43,7 @@ To use this script, you can pass the following command line arguments:
 - Example:
 
   ```bash
-  `unity -quit -batchmode -projectPath "path/to/your/unity/project" -executeMethod BuildProject.PerformBuild -buildTarget Android -buildLocation "./Builds/MyGame.apk"`
+  "path/to/your/unity/editor.exe" -quit -batchmode -projectPath "path/to/your/unity/project" -executeMethod BuildProject.PerformBuild -buildTarget Android -buildLocation "./Builds/MyGame.apk"`
 
 This command will build your Unity project for Android and place the output APK file in the "Builds" folder of your project.
 
