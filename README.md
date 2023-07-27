@@ -25,7 +25,7 @@ Tools for build and delivery
 
 ## Build.cs
 
-This is a simple C# script that automates the process of building your Unity project from the command line. It also includes functionality to disable the Oculus XR plugin before building, if it's enabled. This script can be helpful for automating your build process and integrating it into your development pipeline.
+This is a simple C# script that automates the process of building your Unity project from the command line. Note that it will disable the Oculus XR plugin before building, if it's enabled. This script can be helpful for automating your build process and integrating it into your development pipeline.
 
 ### How to Use
 
