@@ -53,3 +53,43 @@ To use this script, you can pass the following command line arguments:
 
 This command will build your Unity project for Android and place the output APK file in the "Builds" folder of your project.
 
+# SupportScripts
+These scripts supply support for working with various 3rd party services like AWS, Azure, and Slack.
+
+## AWS/DownloadFromS3.py
+- This script will download a file from S3 using an enivornment IAM role or a recent CLI authentication.
+
+"Usage: python DownloadFromS3.py <bucket_name> <object_name> <file_name>"
+
+## AWS/AppendFileInS3.py
+- This script will append text data to a file in S3 using an enivornment IAM role or a recent CLI authentication. The script will create the file or add the data as a new line in the file.
+
+"Usage: python AppendFileInS3.py <bucket_name> <object_key> <region> <data>"
+
+## Azure/GetBlobStorageFile.py
+- This script will download a file from Azure blob storage.
+
+"Usage: python GetBlobStorageFile.py <connection_string> <container_name> <blob_name> <local_file_path>"
+
+## Azure/HostImagesInBlob.py
+- This script will upload all images in a target directory to Blob storage and then write public access urls to a local file.
+
+"Usage: python HostImagesInBlob.py <connection_string> <container_name> <directory_path> <output_file>"
+
+## GoogleApps/SendEmailOnFormSubmit.gs
+- Combine this script with a google form and you can send an email with each submit
+
+## MSTeams/SendTextToTeams.py
+- This script sends a message to a Microsoft Teams channel via an incoming webhook with optional subject, message, and multiple images.
+
+"Usage: python SendTextToTeams.py <webhook_url> <subject> <message> <path_to_image_urls_file>"
+
+## Slack/PostImageAndLogToSlack.py
+- This script sends a message to a Slack channel. The message will post a message and then in a thread post addtional images and log content. You pass it a message, a directory of images, a log file, and a slack channel id.
+
+"Usage: python SendTextToTeams.py <message> <directory> <log_file> <channel_id>"
+
+## Slack/PostImageAndTextToSlack.py
+- This script sends a message to a Slack channel with an optional image in the main message body.
+
+"Usage: python SendTextToTeams.py <token> <channel_id> <filepath> <text_message>"
