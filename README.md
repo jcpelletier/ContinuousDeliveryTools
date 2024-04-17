@@ -79,6 +79,7 @@ These scripts supply support for working with various 3rd party services like AW
 
 ## MSTeams/SendTextToTeams.py
 - This script sends a message to a Microsoft Teams channel via an incoming webhook with optional subject, message, and multiple images.
+- Note that Teams doesn't not support direct image upload via API and instead requires you to supply hosted links. You can use HostImagesInBlob.py to generate these links for images you create.
 
 "Usage: python SendTextToTeams.py <webhook_url> <subject> <message> <path_to_image_urls_file>"
 
