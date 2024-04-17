@@ -26,12 +26,9 @@ These scripts are intended to be used in a CI/CD environment such as Jenkins. Th
   ```bash
   python unity_build.py "path/to/your/unity/editor.exe" "YourJobName" "YourWorkspacePath" "YourBuildNumber"
 
-# Unity Scripts
-These scripts are intended to assist with the build and instrumentation of Unity projects in a CI/CD environment.
 
 ## Build.cs
-
-This is a simple C# script that automates the process of building your Unity project from the command line. Note that it will disable the Oculus XR plugin before building, if it's enabled. This script can be called using buildUnity.py in your CI/CD environment to automate the process of producing builds.
+This is a simple C# script that automates the process of building your Android Unity project from the command line. Note that it will disable the Oculus XR plugin before building, if it's enabled. This script can be called using buildUnity.py in your CI/CD environment to automate the process of producing builds.
 
 ### How to Use
 
