@@ -59,7 +59,8 @@ These scripts supply support for working with various 3rd party services like AW
 "Usage: python DownloadFromS3.py <bucket_name> <object_name> <file_name>"
 
 ## AWS/AppendFileInS3.py
-- This script will append text data to a file in S3 using an enivornment IAM role or a recent CLI authentication. The script will create the file or add the data as a new line in the file.
+- This script will append text data to a file in S3 using an enivornment IAM role or a recent CLI authentication. The script will create the file or add the data as a new line in the existing file.
+- This script can be used for storing logs in S3.
 
 "Usage: python AppendFileInS3.py <bucket_name> <object_key> <region> <data>"
 
